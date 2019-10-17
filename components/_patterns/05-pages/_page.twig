@@ -55,6 +55,12 @@
     {% endif %}
   {% endblock %}
 
+  {% block page_nav %}
+    {% if page.navbar %}
+      {{ page.navbar }}
+    {% endif %}
+  {% endblock %}
+
   {% block page_system %}
     {{ page.breadcrumb }}
     {{ page.highlighted }}
