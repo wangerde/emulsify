@@ -1,8 +1,9 @@
-items:
+items_left:
   - title: "nVent"
     url: "#"
   - title: "Brands"
     url: "#"
+items_right:
   - title: "Contact Us"
     url: "#"
   - title: "My Account"
