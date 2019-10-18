@@ -1,13 +1,10 @@
 <header class="nav-top">
-  {% block nav_left %}
-    {% include "@molecules/menus/nav-menu/nav-menu.twig" with {
-      items: items_left
-    } %}
-  {% endblock %}
-  {% block nav_right %}
-    {% include "@molecules/menus/nav-menu/nav-menu.twig" with {
-      items: items_right
-    } %}
-  {% endblock %}
+  {% include "@molecules/menus/_menu.twig" with {
+    menu_class: "nav-top__left",
+    items: items_left
+  } %}
+  {% include "@molecules/menus/_menu.twig" with {
+    menu_class: "nav-top__right",
+    items: items_right
+  } %}
 </header>
-
