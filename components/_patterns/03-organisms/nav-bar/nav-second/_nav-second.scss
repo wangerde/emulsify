@@ -5,16 +5,32 @@
   background-color: #f3f1f1;
   height: 40px;
   align-items: center;
+  @include list-reset;
 
-  .nav-menu {
+  &__left,
+  &__right {
     
     &__item {
+      margin: 0 1em 0.5em 0;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      
+      @include large {
+        display: inline;
+        margin-bottom: 1em;
+      }
+    
+      &:last-child {
+        margin-right: 0;
+      }
     }
     
     &__link {
+      @include link;
+
       text-transform: none;
       font-size: 13px;
+      letter-spacing: 1.5px;
+      text-decoration: none;
       color: #494949;
       font-weight: 400;
     }
