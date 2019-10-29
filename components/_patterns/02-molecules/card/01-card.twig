@@ -96,21 +96,10 @@
         "paragraph_base_class": card_body_base_class|default('body'),
       } %}
     {% endif %}
-    {% if card_link_url %}
-      {% include "@atoms/01-links/link/link.twig" with {
-        "link_content": card_link_text,
-        "link_url": card_link_url,
-        "link_attributes": card_link_attributes,
-        "link_blockname": card_link_blockname|default(card_base_class),
-        "link_base_class": card_link_base_class|default('link'),
-      } %}
-    {% endif %}
     {% if card_button_url %}
       {% include "@atoms/06-buttons/01-button.twig" with {
         "button_content": card_button_content,
         "button_url": card_button_url,
-        "button_base_class": card_button_base_class|default('button'),
-        "button_attributes": card_button_attributes,
         "button_modifiers": card_button_modifiers,
         "button_blockname": card_blockname|default(card_base_class),
       } %}

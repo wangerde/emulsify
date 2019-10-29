@@ -1,9 +1,31 @@
+.card {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &__copy {
+    margin: 50px 40px;
+  }
+}
+
+.image {
+  width: 100%;
+}
+
 .card__title {
   @include heading-large($font-size: 1.3rem);
   @include no-bottom;
 
+  margin-top: 50px;
+  text-transform: inherit;
+  letter-spacing: 0.18px;
+  font-size: 18x;
+
   &-link {
     @include link;
+
+    text-decoration: none;
+    color: $black;
   }
 }
 
@@ -16,18 +38,43 @@
 
 .card__body {
   margin: 0.7em 0 1em;
-}
-
-.card__link {
-  @include link;
+  font-size: 16px;
+  color: var(--black);
+  letter-spacing: 0.16px;
+  font-weight: 300;
 }
 
 .card__button {
-  @include button;
+  @include link;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: right;
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 0.45px;
+  color: $red;
+  margin-top: 40px;
+}
+
+.icon {
+  width: 60px;
+  padding: 0;
+  height: 15px;
 }
 
 // Variations
 .card--bg {
   background-color: $gray-lightest;
-  padding: 1em;
+}
+
+.card--border-light {
+  background-color: $white;
+  border: 1px solid $grey3;
+}
+
+.card--border-dark {
+  border: 1px solid grey;
 }

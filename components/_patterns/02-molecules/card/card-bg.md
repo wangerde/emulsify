@@ -1,6 +1,6 @@
 ---
 el: ".card-bg"
-title: "Card with background"
+title: "Card with grey background"
 ---
 ## Card
 _Title and subtext_
