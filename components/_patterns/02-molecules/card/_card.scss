@@ -13,39 +13,30 @@
 }
 
 .card__title {
-  @include heading-large($font-size: 1.3rem);
-  @include no-bottom;
-
   margin-top: 50px;
   text-transform: inherit;
   letter-spacing: 0.18px;
   font-size: 18x;
 
   &-link {
-    @include link;
-
     text-decoration: none;
-    color: $black;
+    color: black;
   }
 }
 
 .card__subtitle {
-  @include heading-medium($font-size: 1rem);
-  @include no-bottom;
-
-  color: $gray;
+  color: grey;
 }
 
 .card__body {
   margin: 0.7em 0 1em;
   font-size: 16px;
-  color: var(--black);
+  color: black;
   letter-spacing: 0.16px;
   font-weight: 300;
 }
 
 .card__button {
-  @include link;
 
   text-decoration: none;
   text-transform: uppercase;
@@ -55,7 +46,7 @@
   font-weight: normal;
   line-height: 24px;
   letter-spacing: 0.45px;
-  color: $red;
+  color: #c4262e;
   margin-top: 40px;
 }
 
@@ -67,12 +58,12 @@
 
 // Variations
 .card--bg {
-  background-color: $gray-lightest;
+  background-color: lavenderblush;
 }
 
 .card--border-light {
-  background-color: $white;
-  border: 1px solid $grey3;
+  background-color: wheat;
+  border: 1px solid rosybrown;
 }
 
 .card--border-dark {
